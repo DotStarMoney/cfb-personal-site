@@ -1,0 +1,97 @@
+html { 
+  background: url(../img/tile2.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+    margin: 0px;
+}
+
+.name_box {
+    padding: 1em;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20em;
+    margin-bottom: 20em;
+    /* border: 1px solid white; */
+    background: rgba(0, 0, 0, 0.5);
+    width: 27%;
+    color: white;
+    font-family: Helvetica;
+}
+
+.about_box {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: .5em;
+    text-align: center;
+    font-size: 1.5em;
+	font-family: Helvetica;
+}
+
+.about_container {
+    background-color: #5d6c69;
+    width: 100%;
+	height: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.cell {
+    width: 33%;
+    height: 100%;
+    position:relative;
+    border: 2px solid black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+}
+
+.hover_title {
+    color: white;
+  	width: 100%;
+	  height: 100%;
+    text-align: center;
+    padding-top:6em;
+    position: absolute;
+	  overflow: hidden;
+	  opacity: 0;
+	  transition: all 0.3s ease-in-out;
+	  transform: scale(0);
+	  backface-visibility: hidden;
+}
+.cell:hover {
+	box-shadow: 
+		inset 0 0 0 100em rgba(0,0,0, 0.65),
+		0 1px 2px rgba(0,0,0,0.1);
+}
+
+.cell:hover .hover_title {
+	font-family: Helvetica;
+    transition: all 0.15s ease-in-out;
+    opacity: 1;
+	  transform: scale(1);
+
+}
+.footer {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+	font-family: Helvetica;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    padding: 1em;
+}
